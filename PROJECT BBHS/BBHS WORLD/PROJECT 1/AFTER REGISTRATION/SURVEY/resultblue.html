@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Survey Result</title>
+  <link rel="stylesheet" type="text/css"
+    href="http://localhost/PROJECT BBHS/BBHS WORLD/PROJECT 1/AFTER REGISTRATION/SURVEY/result.css" />
+</head>
+
+<body>
+  <div class="heading">
+    <h1 id="head">Survey Result</h1>
+    <h2 id="subheading">Your Domain Preference</h2>
+  </div>
+  <div class="result-container">
+    <p id="result"></p>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const result = localStorage.getItem("surveyResult");
+      const resultElement = document.getElementById("result");
+
+      if (result) {
+        resultElement.textContent = `You are most interested in: ${result}`;
+      } else {
+        resultElement.textContent =
+          "No result found. Please complete the survey.";
+      }
+    });
+  </script>
+  <div class="blue1">
+    <div class="blue2">
+      <!-- <button class="custom-button" onclick="window.location.href='blueside.html'">About Blue Team</button> -->
+      About Blue Team
+    </div>
+    <div class="blue3">
+      <!-- <button class="custom-button" onclick="window.location.href='buycourse2.html'">Available Courses</button> -->
+      Available Courses
+    </div>
+  </div>
+
+  <script>
+    const divs = document.querySelectorAll(".blue2,.blue3");
+    const redirectUrls = ["http://localhost/PROJECT BBHS/BBHS WORLD/PROJECT 1/AFTER REGISTRATION/blueside.html", "http://localhost/PROJECT BBHS/BBHS WORLD/PROJECT 1/AFTER REGISTRATION/BUY COURSE/buycourse2.html"];
+
+    divs.forEach(function (div, index) {
+      div.addEventListener("click", function () {
+        window.location.href = redirectUrls[index];
+      });
+    });
+  </script>
+</body>
+
+</html>

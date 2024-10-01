@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="myprofile.css">
+
+<body>
+
+  <!-- <h1>User Data</h1>
+  <div id="user-data"></div>
+
+  <script>
+    // Make an AJAX request to the PHP file
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'testing.php', true);
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        // Parse the JSON data
+        var userData = JSON.parse(xhr.responseText);
+
+        // Update the HTML file with the user data
+        var userDataDiv = document.getElementById('user-data');
+        userDataDiv.innerHTML = `
+                    <p>Name: ${userData.Name}</p>
+                    <p>Email: ${userData.Email}</p>
+                    <p>Gender: ${userData.Gender}</p>
+                    <p>DOB: ${userData.DOB}</p>
+                    <p>State: ${userData.State}</p>
+                    <p>Profession: ${userData.Profession}</p>
+                    <p>Username: ${userData.Username}</p>
+                `;
+      }
+    };
+    xhr.send();
+  </script> -->
+  <div class="logo_and_title">
+    <img src="user_details.png" alt="">
+    <h1> USER DETAILS </h1>
+  </div>
+
+  <div class="user_details" id="user_details">
+    <div class="data_user_details" id="name"> </div>
+    <div class="data_user_details" id="email"> </div>
+    <div class="data_user_details" id="gender"> </div>
+    <div class="data_user_details" id="dob"> </div>
+    <div class="data_user_details" id="state"> </div>
+    <div class="data_user_details" id="profession"> </div>
+    <div class="data_user_details" id="username"> </div>
+
+  </div>
+
+
+  <script>
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'myprofile.php', true);
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        // Parse the JSON data
+        var userData = JSON.parse(xhr.responseText);
+
+        // Update the HTML file with the user data
+        // var userDataDiv = document.getElementById('user-data');
+        // userDataDiv.innerHTML = `
+        //             <p>Name: ${userData.Name}</p>
+        //             <p>Email: ${userData.Email}</p>
+        //             <p>Gender: ${userData.Gender}</p>
+        //             <p>DOB: ${userData.DOB}</p>
+        //             <p>State: ${userData.State}</p>
+        //             <p>Profession: ${userData.Profession}</p>
+        //             <p>Username: ${userData.Username}</p>
+        //         `;
+        document.getElementById('name').innerHTML = '<h2> Name: </h2>' + userData.Name;
+
+        document.getElementById('email').innerHTML = '<h2> Email Id: </h2>' + userData.Email;
+
+        document.getElementById('gender').innerHTML = '<h2> Gender: </h2>' + userData.Gender;
+
+        document.getElementById('dob').innerHTML = '<h2> Date Of Birth: </h2>' + userData.DOB;
+
+        document.getElementById('state').innerHTML = '<h2> State: </h2>' + userData.State;
+
+        document.getElementById('profession').innerHTML = '<h2> Profession: </h2>' + userData.Profession;
+
+        document.getElementById('username').innerHTML = '<h2> Username: </h2>' + userData.Username;
+      }
+    };
+    xhr.send();
+  </script>
+
+
+  <!-- <button class="update_details">Update Details</button> -->
+  <div class="update_details"> Update Details </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Result</title>
+    <link rel="stylesheet" type="text/css" href="result.css" />
+  </head>
+
+  <body>
+    <div class="heading">
+      <h1 id="head">Survey Result</h1>
+      <h2 id="subheading">Your Domain Preference</h2>
+    </div>
+    <div class="result-container">
+      <p id="result"></p>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const result = localStorage.getItem("surveyResult");
+        const resultElement = document.getElementById("result");
+
+        if (result) {
+          resultElement.textContent = `You are most interested in: ${result}`;
+        } else {
+          resultElement.textContent =
+            "No result found. Please complete the survey.";
+        }
+      });
+    </script>
+    <div class="red1">
+      <div class="red2">
+        <!-- <button class="custom-button" onclick="window.location.href='redside.html'">About red Team</button> -->
+        About red Team
+      </div>
+      <div class="red3">
+        <!-- <button class="custom-button" onclick="window.location.href='buycourse.html'">Available Courses</button> -->
+        Available Courses
+      </div>
+    </div>
+
+    <script>
+      const divs = document.querySelectorAll(".red2,.red3");
+      const redirectUrls = ["redside.html", "buycourse.html"];
+
+      divs.forEach(function (div, index) {
+        div.addEventListener("click", function () {
+          window.location.href = redirectUrls[index];
+        });
+      });
+    </script>
+  </body>
+</html>

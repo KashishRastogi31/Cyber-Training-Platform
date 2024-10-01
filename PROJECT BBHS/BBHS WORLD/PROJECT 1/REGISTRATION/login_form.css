@@ -1,0 +1,76 @@
+body {
+    background-image: url(img3.jpg);
+    background-size: cover; 
+    background-position: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Tahoma;
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    border: 2px solid #fff;
+    background-color: rgba(30, 60, 100, 0.4);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+form h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+label {
+    font-size: 13px;
+    font-family: cursive;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #f0f0f0;
+    
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: monospace;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.createnew{
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: cursive;
+    letter-spacing: 2px;
+    color: rgb(255,255,255);
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

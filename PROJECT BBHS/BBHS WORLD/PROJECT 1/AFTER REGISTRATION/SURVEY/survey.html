@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="survey.css" />
+  </head>
+
+  <body>
+    <div class="heading">
+      <h1 id="head">Domain Survey</h1>
+      <h2 id="subheading">Fill this form to know your interests!</h2>
+    </div>
+    <form id="surveyForm" class="form">
+      <div class="form-container">
+        <label id="head1"
+          >Which of the following tasks interests you the most?</label
+        ><br /><br />
+        <div class="radio-container">
+          <input type="radio" name="task" value="A" class="larger" />
+          <span
+            >Identifying and analyzing security threats to prevent
+            attacks.</span
+          >
+        </div>
+        <div class="radio-container">
+          <input type="radio" name="task" value="B" class="larger" />
+          <span
+            >Performing simulated attacks to find and fix security
+            vulnerabilities.</span
+          >
+        </div>
+        <div class="radio-container">
+          <input type="radio" name="task" value="C" class="larger" />
+          <span
+            >Coordinating between defensive and offensive teams to improve
+            overall security.</span
+          >
+        </div>
+        <br /><br />
+        <label id="head1">Which skill set do you want to develop further?</label
+        ><br /><br />
+        <div class="radio-container">
+          <input type="radio" name="skill" value="A" class="larger" />
+          <span>Incident response and threat analysis.</span>
+        </div>
+        <div class="radio-container">
+          <input type="radio" name="skill" value="B" class="larger" />
+          <span>Penetration testing and vulnerability assessment.</span>
+        </div>
+        <div class="radio-container">
+          <input type="radio" name="skill" value="C" class="larger" />
+          <span>Security policy development and risk management.</span>
+        </div>
+        <br /><br />
+        <label id="head1"
+          >How do you prefer to approach a security problem?</label
+        ><br /><br />
+        <div class="radio-container">
+          <input type="radio" name="approach" value="A" class="larger" />
+          <span>By building and implementing protective measures.</span>
+        </div>
+        <div class="radio-container">
+          <input type="radio" name="approach" value="B" class="larger" />
+          <span>By thinking like an attacker to uncover weaknesses.</span>
+        </div>
+        <div class="radio-container">
+          <input type="radio" name="approach" value="C" class="larger" />
+          <span
+            >By integrating and coordinating multiple security strategies.</span
+          >
+        </div>
+        <br /><br />
+        <label id="head1">Which scenario sounds most appealing to you?</label
+        ><br /><br />
+        <div class="radio-container">
+          <input type="radio" name="scenario" value="A" class="larger" />
+          <span
+            >Monitoring network traffic and responding to potential threats in
+            real-time.</span
+          >
+        </div>
+        <div class="radio-container">
+          <input type="radio" name="scenario" value="B" class="larger" />
+          <span
+            >Conducting ethical hacking to expose security flaws before real
+            attackers do.</span
+          >
+        </div>
+        <div class="radio-container">
+          <input type="radio" name="scenario" value="C" class="larger" />
+          <span
+            >Developing comprehensive security plans that balance both attack
+            and defense perspectives.</span
+          >
+        </div>
+        <br /><br />
+        <label id="head1">What type of work environment do you prefer?</label
+        ><br /><br />
+        <div class="radio-container">
+          <input type="radio" name="environment" value="A" class="larger" />
+          <span
+            >A structured environment focused on maintaining and enhancing
+            security protocols.</span
+          >
+        </div>
+        <div class="radio-container">
+          <input type="radio" name="environment" value="B" class="larger" />
+          <span
+            >A dynamic and challenging environment where you can test and break
+            systems.</span
+          >
+        </div>
+        <div class="radio-container">
+          <input type="radio" name="environment" value="C" class="larger" />
+          <span
+            >A collaborative environment where you bridge the gap between
+            attackers and defenders.</span
+          >
+        </div>
+      </div>
+      <br /><br />
+      <input type="submit" value="Submit" class="button" />
+    </form>
+
+    <script src="survey.js"></script>
+  </body>
+</html>
